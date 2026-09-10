@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap link for Google Search Console & Bing Webmaster Tools
-Sitemap: https://denesh-portfolio.vercel.app/sitemap.xml
+Sitemap: https://denesh-portfolio.netlify.app/sitemap.xml
