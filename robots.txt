@@ -1,0 +1,6 @@
+# Robots.txt for Denesh Baskaran Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap link for Google Search Console & Bing Webmaster Tools
+Sitemap: https://denesh-portfolio.vercel.app/sitemap.xml

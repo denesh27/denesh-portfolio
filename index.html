@@ -1,818 +1,2953 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Denesh Baskaran — Software Engineer Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Denesh Baskaran — Software Engineer &amp; Full-Stack Developer</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Portfolio of Denesh Baskaran. Software Engineer & UNITAR Software Engineering Graduate (CGPA 3.75, 10x Dean's List) with proven full-stack and automation experience delivering enterprise software at Chin Hin Group Property."
+    />
+    <meta name="keywords" content="Denesh Baskaran, Software Engineer, Full-Stack Developer, Web Developer, React, Node.js, Express, Python, Flask, PostgreSQL, Supabase, Enterprise Automation, Microsoft Graph API, Power Apps, UNITAR, Malaysia, Portfolio" />
+    <meta name="author" content="Denesh Baskaran" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://denesh-portfolio.vercel.app/" />
+
+    <!-- Google Search Console Verification (Replace content with your GSC HTML tag token) -->
+    <!-- Example: <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN" /> -->
+    <meta name="google-site-verification" content="google-search-console-verification-token" />
+
+    <!-- Theme & App Metadata -->
+    <meta name="theme-color" content="#09090b" />
+    <meta name="msapplication-TileColor" content="#09090b" />
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://denesh-portfolio.vercel.app/" />
+    <meta property="og:site_name" content="Denesh Baskaran Portfolio" />
+    <meta property="og:title" content="Denesh Baskaran — Software Engineer &amp; Full-Stack Developer" />
+    <meta property="og:description" content="Software Engineer & UNITAR Graduate (CGPA 3.75, 10x Dean's List). Explore enterprise full-stack web applications, automation pipelines, and academic honors." />
+    <meta property="og:image" content="https://denesh-portfolio.vercel.app/images/ChatGPT_Image_Sep_10__2026__07_58_39_PM-removebg-preview.png" />
+    <meta property="og:image:alt" content="Denesh Baskaran - Software Engineer" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://denesh-portfolio.vercel.app/" />
+    <meta name="twitter:title" content="Denesh Baskaran — Software Engineer &amp; Full-Stack Developer" />
+    <meta name="twitter:description" content="Software Engineer & UNITAR Graduate (CGPA 3.75, 10x Dean's List). Explore enterprise full-stack web applications, automation pipelines, and academic honors." />
+    <meta name="twitter:image" content="https://denesh-portfolio.vercel.app/images/ChatGPT_Image_Sep_10__2026__07_58_39_PM-removebg-preview.png" />
+
+    <!-- Structured Data (JSON-LD) for Google Knowledge Graph & Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://denesh-portfolio.vercel.app/#person",
+          "name": "Denesh Baskaran",
+          "url": "https://denesh-portfolio.vercel.app/",
+          "image": "https://denesh-portfolio.vercel.app/images/ChatGPT_Image_Sep_10__2026__07_58_39_PM-removebg-preview.png",
+          "jobTitle": "Software Engineer & Full-Stack Developer",
+          "email": "denesh040427@gmail.com",
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "UNITAR International University"
+          },
+          "sameAs": [
+            "https://github.com/denesh27",
+            "https://www.linkedin.com/in/denesh-baskaran/"
+          ],
+          "knowsAbout": [
+            "Full-Stack Web Development",
+            "Software Engineering",
+            "Python",
+            "Flask",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Microsoft Graph API",
+            "Power Apps",
+            "Enterprise Automation"
+          ],
+          "award": [
+            "Final Year Project Best Presenter Award (UNITAR 2026)",
+            "System Analysis & Design Best Idea Pitching 1st Place (UNITAR 2024)",
+            "10x Consecutive Dean's List Distinction (CGPA 3.75, UNITAR 2023-2026)"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://denesh-portfolio.vercel.app/#website",
+          "url": "https://denesh-portfolio.vercel.app/",
+          "name": "Denesh Baskaran — Software Engineer Portfolio",
+          "description": "Portfolio of Denesh Baskaran. Software Engineer & UNITAR Graduate with proven full-stack and enterprise automation experience.",
+          "author": {
+            "@id": "https://denesh-portfolio.vercel.app/#person"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, Inter, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="portfolio.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom High-Contrast Alternating Stylesheet -->
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
-    <!-- ════════════════════════════════ NAV ════════════════════════════════ -->
-    <nav>
-      <div class="nav-inner">
-        <a href="#hero" class="nav-logo">
+    <!-- Reading Scroll Progress Bar -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- ════════════════════════════════ FLOATING DOCK NAVIGATION ════════════════════════════════ -->
+    <nav class="site-nav" id="navbar">
+      <div class="nav-dock-capsule">
+        <!-- Logo -->
+        <a href="#hero" class="nav-logo" aria-label="Home">
           <div class="nav-monogram">DB</div>
-          <span class="nav-name">denesh.baskaran</span>
+          <span class="nav-name">DENESH<span>.BASKARAN</span></span>
         </a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav-status">
-          <div class="status-dot"></div>
-          OPEN TO WORK (Internship)
+
+        <!-- Centered Nav Links -->
+        <div class="nav-center">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#awards">Awards</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Right Side Nav Status -->
+        <div class="nav-right">
+          <div class="nav-status-badge">
+            <span class="status-dot-pure"></span>
+            <span>Open to Work</span>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="mobile-toggle"
+            id="mobileToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
         </div>
       </div>
     </nav>
 
-    <!-- ════════════════════════════════ HERO ════════════════════════════════ -->
-    <section id="hero">
-      <div class="hero-grid-bg"></div>
-      <div class="hero-radial"></div>
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-left">
-            <div class="hero-eyebrow">
-              PORTFOLIO_v2025.1 — FULL-STACK ENGINEER
-            </div>
-            <h1 class="hero-name">Denesh<br />Baskaran<span>.</span></h1>
-            <p class="hero-role">
-              Software Engineering Student · Full-Stack Developer
-            </p>
-            <div class="hero-tags">
-              <span class="tag a">PERN Stack</span>
-              <span class="tag">daisyUI</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Figma</span>
-              <span class="tag">Software Testing</span>
-              <span class="tag">Software analysis and design</span>
-              <span class="tag">Deployment</span>
-            </div>
-            <div class="hero-cta">
-              <a href="#projects" class="btn btn-primary">VIEW PROJECTS ↓</a>
-              <a href="#contact" class="btn btn-ghost">GET IN TOUCH ↗</a>
-            </div>
-          </div>
+    <!-- Mobile Slide-Down Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mobile-nav-item">Home</a>
+      <a href="#about" class="mobile-nav-item">About</a>
+      <a href="#awards" class="mobile-nav-item">Awards</a>
+      <a href="#projects" class="mobile-nav-item">Projects</a>
+      <a href="#journey" class="mobile-nav-item">Journey</a>
+      <a href="#contact" class="mobile-nav-item">Contact</a>
+    </div>
 
-          <div class="hero-right">
-            <div class="terminal">
-              <div class="terminal-bar">
-                <div class="t-dot t-dot-r"></div>
-                <div class="t-dot t-dot-y"></div>
-                <div class="t-dot t-dot-g"></div>
-                <span class="terminal-title"
-                  >denesh@portfolio — bash — 80×24</span
-                >
-              </div>
-              <div class="terminal-body" id="termBody"></div>
-            </div>
+    <!-- ════════════════════════════════ SECTION 1: HERO (WHITE BACKGROUND) ════════════════════════════════ -->
+    <section id="hero" class="hero-stage">
+      <!-- Top Giant Typographic Name (Outlined + Solid) -->
+      <div class="hero-giant-typography" data-aos="fade-down" data-aos-duration="700">
+        <span class="hero-name-outline">DENESH</span>
+        <span class="hero-name-solid">BASKARAN</span>
+      </div>
+
+      <!-- Hero Stage Body: Left Column, Center Portrait, Right Social Links -->
+      <div class="hero-stage-body">
+        <!-- Left Column: Role, Tagline, Collaborate CTA -->
+        <div class="hero-col-left" data-aos="fade-right" data-aos-duration="700" data-aos-delay="150">
+          <h2 class="hero-role-title">Software Engineer</h2>
+          <p class="hero-role-desc">
+            Designing and engineering digital products that are clear, usable, and conversion focused.
+          </p>
+          <div class="hero-cta-wrap">
+            <a href="#contact" class="btn-collaborate">
+              <span>Let's collaborate</span>
+              <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column: Cutout Portrait with B&W to Color Hover -->
+        <div class="hero-col-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <div class="hero-portrait-frame">
+            <img
+              src="images/ChatGPT_Image_Sep_10__2026__07_58_39_PM-removebg-preview.png"
+              alt="Denesh Baskaran"
+              class="hero-portrait-img"
+              id="heroPortrait"
+            />
+          </div>
+        </div>
+
+        <!-- Right Column: Vertical Stack of Social Pill Buttons -->
+        <div class="hero-col-right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+          <div class="hero-social-pill-stack">
+            <!-- GitHub -->
+            <a href="https://github.com/denesh27" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="GitHub">
+              <svg class="pill-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/denesh-baskaran/" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="LinkedIn">
+              <svg class="pill-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- Resume / CV -->
+            <a href="DENESH A_L BASKARAN - Resume.pdf" download="Denesh_Baskaran_Resume.pdf" class="hero-social-pill" aria-label="Resume">
+              <svg class="pill-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Resume</span>
+            </a>
+
+            <!-- Contact / Email -->
+            <a href="mailto:denesh040427@gmail.com" class="hero-social-pill" aria-label="Email">
+              <svg class="pill-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Email</span>
+            </a>
           </div>
         </div>
       </div>
+
     </section>
 
-    <!-- ════════════════════════════════ ABOUT ════════════════════════════════ -->
+    <!-- ════════════════════════════════ SECTION 2: ABOUT (BLACK BACKGROUND) ════════════════════════════════ -->
     <section id="about">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-num">01</span>
-          <h2 class="section-title">ABOUT</h2>
-          <div class="section-line"></div>
-          <span class="section-count">UNITAR INTERNATIONAL UNIVERSITY</span>
+        <div class="section-head-dark" data-aos="fade-up">
+          <div class="section-head-meta">
+            <span class="sec-num">// 01 ABOUT</span>
+            <span class="theme-mode-tag dark">● DARK THEME</span>
+          </div>
+          <h2 class="sec-title">About Me</h2>
+          <span class="sec-desc"
+            >UNITAR INTERNATIONAL UNIVERSITY · SOFTWARE ENGINEERING
+            UNDERGRADUATE</span
+          >
         </div>
 
-        <div class="about-grid fade-in">
-          <div class="about-left">
-            <p class="about-text">
-              <strong
-                >I have built full-stack applications that solve real
-                problems</strong
+        <div class="bento-grid">
+          <!-- Bento Card 1: Intro Narrative (Col Span 2) -->
+          <div
+            class="bento-card-dark bento-col-2"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div>
+              <div class="bento-intro-icon">👋</div>
+              <h3 class="bento-intro-title">Hi, I'm Denesh Baskaran.</h3>
+              <p class="bento-narrative">
+                Software Engineering student (<strong>CGPA 3.75, 10x Dean's List</strong>)
+                with proven full-stack and automation experience delivering enterprise
+                software at <strong>Chin Hin Group Property</strong>. I architected an end-to-end
+                Python/Flask and Microsoft Graph reporting pipeline deployed across <strong>15+ construction projects</strong>
+                and completed all 8 semesters of Software Engineering coursework at UNITAR International University.
+              </p>
+              <p class="bento-narrative">
+                My technical core centers on the <strong>PERN stack</strong> (PostgreSQL, Express, React, Node.js),
+                enterprise Python (Flask), and automated cloud pipelines. I engineer clean RESTful endpoints, structure
+                normalized relational databases, and craft responsive frontends using React and daisyUI on Tailwind CSS.
+              </p>
+              <p class="bento-narrative">
+                Beyond coding, I bring solid grounding in <strong>Software Testing &amp; QA</strong>,
+                Agile Scrum, and Human-Computer Interaction (HCI). From enterprise background automation
+                to consumer marketplaces, I focus on shipping software that is reliable, scalable, and built for real users.
+              </p>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <a
+                href="DENESH A_L BASKARAN - Resume.pdf"
+                download="Denesh_Baskaran_Resume.pdf"
+                class="btn-pill-light"
               >
-              from service marketplaces to event booking and ticketing systems.
-              Currently in my 8th semester of Software Engineering at UNITAR
-              International University, I've spent three years translating
-              academic theory into production-grade software.
-            </p>
-            <p class="about-text">
-              My technical focus sits at the
-              <strong>PERN stack</strong>. I know when to reach for PostgreSQL's
-              relational rigour and when MongoDB's flexibility is the better
-              call. I build UIs with React, wire them to Express APIs, and
-              obsess over the component layer using daisyUI on top of Tailwind.
-            </p>
-            <p class="about-text">
-              Beyond coding, I carry
-              <strong>grounding in software testing principles</strong> and
-              foundational AI knowledge which makes me conscious of reliability
-              and future-compatibility at the design stage, not as an
-              afterthought. I'm actively seeking an internship where I can ship
-              real features in a team that takes quality seriously.
-            </p>
+                <span>Download Official Resume</span>
+                <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <div class="about-right">
-            <div class="data-label">
-              STRUCTURED RECORD — SOFTWARE ENGINEER PROFILE
+          <!-- Bento Card 2: Lanyard ID Badge (Col Span 1) -->
+          <div class="bento-card-dark bento-lanyard-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="lanyard-container">
+              <img
+                src="images/denesh-lanyard-badge.png"
+                alt="Denesh Baskaran Lanyard ID Badge"
+                class="lanyard-badge-img"
+              />
             </div>
-            <table class="data-table">
-              <tr>
-                <td>Institution</td>
-                <td style="color: var(--accent)">
-                  UNITAR International University
-                </td>
-              </tr>
-              <tr>
-                <td>Program</td>
-                <td>BIT (Hons) Software Engineering</td>
-              </tr>
-              <tr>
-                <td>Semester</td>
-                <td>8th · Expected Graduation 2026</td>
-              </tr>
-              <tr>
-                <td>Location</td>
-                <td>Klang Selangor, Petaling Jaya (hostel)</td>
-              </tr>
-              <tr>
-                <td>Primary Stack</td>
-                <td style="color: var(--blue)">PERN, PhP + Mysql</td>
-              </tr>
-              <tr>
-                <td>UI Libraries</td>
-                <td>daisyUI · Tailwind CSS</td>
-              </tr>
-              <tr>
-                <td>Secondary</td>
-                <td>
-                  Software Testing · AI Foundations . Software analysis and
-                  design
-                </td>
-              </tr>
-              <tr>
-                <td>Design</td>
-                <td>Figma · UI/UX Wireframing</td>
-              </tr>
-              <tr>
-                <td>Languages</td>
-                <td>
-                  JavaScript · SQL · HTML · CSS . Python . PHP . C++ . Java
-                  (basics) . VB.NET
-                </td>
-              </tr>
-              <tr>
-                <td>Status</td>
-                <td style="color: var(--green)">
-                  ● Actively Seeking Internship
-                </td>
-              </tr>
-            </table>
-            <a
-              href="DENESH A_L BASKARAN - Resume.pdf"
-              download="Denesh_Baskaran_Resume.pdf"
-              class="btn btn-ghost"
-              style="font-size: 10px; letter-spacing: 0.1em"
-              >DOWNLOAD RESUME ↓</a
-            >
+          </div>
+
+          <!-- Bento Card 3: Academic Degree & GPA Highlight (Col Span 1) -->
+          <div class="bento-card-dark" data-aos="fade-up" data-aos-delay="100">
+            <div>
+              <div class="academic-top">
+                <div class="academic-icon-badge">
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    ></path>
+                    <path d="M22 10v6"></path>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                  </svg>
+                </div>
+                <span class="academic-status-pill">Coursework Completed · Expected 11/2026</span>
+              </div>
+
+              <div class="academic-uni">UNITAR International University</div>
+              <h4 class="academic-degree">BIT (Hons) Software Engineering</h4>
+
+              <div class="academic-courses">
+                <span class="course-pill-dark">PERN Full-Stack</span>
+                <span class="course-pill-dark">Software Testing &amp; QA</span>
+                <span class="course-pill-dark">Database Systems</span>
+                <span class="course-pill-dark">Agile Scrum</span>
+                <span class="course-pill-dark">Software Architecture</span>
+                <span class="course-pill-dark">OOP (Java / C++)</span>
+                <span class="course-pill-dark">Project Management</span>
+                <span class="course-pill-dark">Algorithms</span>
+              </div>
+            </div>
+
+            <div class="academic-gpa-box">
+              <span class="gpa-big">3.75</span>
+              <div class="gpa-label-wrap">
+                <span class="gpa-status">CGPA 3.75 · 10x Dean's List</span>
+                <span class="gpa-scale">/ 4.00 Max Degree CGPA (117 Credits)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 4: Categorized Tech Stack Grid (Col Span 2) -->
+          <div
+            class="bento-card-dark bento-col-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="bento-section-title-dark">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span>Tech Stack Ecosystem</span>
+            </div>
+
+            <div class="bento-tech-subsections">
+              <!-- Core Languages -->
+              <div>
+                <h5 class="tech-group-title-dark">Languages</h5>
+                <div class="tech-items-grid">
+                  <span class="tech-pill-dark">JavaScript (ES6+)</span>
+                  <span class="tech-pill-dark">Python</span>
+                  <span class="tech-pill-dark">SQL</span>
+                  <span class="tech-pill-dark">PHP</span>
+                  <span class="tech-pill-dark">Java</span>
+                  <span class="tech-pill-dark">C++</span>
+                  <span class="tech-pill-dark">HTML5</span>
+                  <span class="tech-pill-dark">CSS3</span>
+                </div>
+              </div>
+
+              <!-- Frameworks & UI -->
+              <div>
+                <h5 class="tech-group-title-dark">Frameworks &amp; Libraries</h5>
+                <div class="tech-items-grid">
+                  <span class="tech-pill-dark">React.js</span>
+                  <span class="tech-pill-dark">Node.js</span>
+                  <span class="tech-pill-dark">Express.js</span>
+                  <span class="tech-pill-dark">Flask</span>
+                  <span class="tech-pill-dark">Tailwind CSS</span>
+                  <span class="tech-pill-dark">daisyUI</span>
+                </div>
+              </div>
+
+              <!-- Databases & Cloud -->
+              <div>
+                <h5 class="tech-group-title-dark">Databases &amp; Cloud Hosting</h5>
+                <div class="tech-items-grid">
+                  <span class="tech-pill-dark">PostgreSQL</span>
+                  <span class="tech-pill-dark">MySQL</span>
+                  <span class="tech-pill-dark">SQLite</span>
+                  <span class="tech-pill-dark">Supabase</span>
+                  <span class="tech-pill-dark">Netlify</span>
+                  <span class="tech-pill-dark">Vercel</span>
+                  <span class="tech-pill-dark">Render</span>
+                  <span class="tech-pill-dark">Railway</span>
+                </div>
+              </div>
+
+              <!-- Enterprise Tools & APIs -->
+              <div>
+                <h5 class="tech-group-title-dark">Developer Tools &amp; Enterprise Platforms</h5>
+                <div class="tech-items-grid">
+                  <span class="tech-pill-dark">Microsoft Graph API</span>
+                  <span class="tech-pill-dark">Power Apps</span>
+                  <span class="tech-pill-dark">Power Automate</span>
+                  <span class="tech-pill-dark">Power BI</span>
+                  <span class="tech-pill-dark">PnP.PowerShell</span>
+                  <span class="tech-pill-dark">SharePoint</span>
+                  <span class="tech-pill-dark">Novade Cloud</span>
+                  <span class="tech-pill-dark">Zendesk</span>
+                  <span class="tech-pill-dark">Stripe API</span>
+                  <span class="tech-pill-dark">OpenStreetMap API</span>
+                  <span class="tech-pill-dark">Postman</span>
+                  <span class="tech-pill-dark">Git &amp; GitHub</span>
+                  <span class="tech-pill-dark">Figma UI/UX</span>
+                </div>
+              </div>
+
+              <!-- System Design & Methodologies -->
+              <div>
+                <h5 class="tech-group-title-dark">Methodologies &amp; Architecture</h5>
+                <div class="tech-items-grid">
+                  <span class="tech-pill-dark">Agile Scrum</span>
+                  <span class="tech-pill-dark">Software QA &amp; Testing</span>
+                  <span class="tech-pill-dark">Database Normalization</span>
+                  <span class="tech-pill-dark">ERD &amp; UML Diagrams</span>
+                  <span class="tech-pill-dark">RBAC (Role-Based Access)</span>
+                  <span class="tech-pill-dark">PMBOK</span>
+                  <span class="tech-pill-dark">Project Management</span>
+                  <span class="tech-pill-dark">HCI Standards</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 5: Workflow Philosophy (Col Span 3) -->
+          <div
+            class="bento-card-dark bento-col-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="philosophy-layout">
+              <div class="philosophy-left">
+                <div class="philosophy-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                </div>
+                <h4 class="philosophy-title">Workflow Philosophy</h4>
+              </div>
+
+              <div class="philosophy-right">
+                <p class="philosophy-quote">
+                  "I don't just write syntax; I design end-to-end systems. I
+                  structure robust database schemas, optimize RESTful APIs, and
+                  architect scalable user interfaces while applying rigorous
+                  software testing methodology and clean modularity."
+                </p>
+                <div class="philosophy-tags">
+                  <span class="tag-badge-white">System Architecture</span>
+                  <span class="tag-badge-white">Full-Stack PERN</span>
+                  <span class="tag-badge-white">Relational Integrity</span>
+                  <span class="tag-badge-white">Automated Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Card 6: Focus Banner (Col Span 3) -->
+          <div
+            class="bento-card-dark bento-col-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="focus-layout">
+              <div class="focus-left">
+                <h4 class="focus-title">My Core Engineering Focus</h4>
+                <p class="focus-desc">
+                  Bridging systems analysis with reliable implementation — from
+                  relational data architecture and Express APIs to responsive
+                  React frontends.
+                </p>
+              </div>
+              <div class="focus-tiles-wrap">
+                <div class="focus-tile-dark">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="18" height="7" x="3" y="3" rx="1"></rect>
+                    <rect width="9" height="7" x="3" y="14" rx="1"></rect>
+                    <rect width="5" height="7" x="16" y="14" rx="1"></rect>
+                  </svg>
+                  <span>Full-Stack Web Systems</span>
+                </div>
+                <div class="focus-tile-dark">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                  </svg>
+                  <span>Database Architecture</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════════════════════════════ SKILLS ════════════════════════════════ -->
-    <section id="skills">
+    <!-- ════════════════════════════════ SECTION 3: AWARDS & HONORS GALLERY (DARK THEME) ════════════════════════════════ -->
+    <section id="awards">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-num">02</span>
-          <h2 class="section-title">SKILLS</h2>
-          <div class="section-line"></div>
-          <span class="section-count">9 TECHNOLOGIES · 3 DOMAINS</span>
+        <div class="section-head-dark" data-aos="fade-up">
+          <div class="section-head-meta">
+            <span class="sec-num">// 02 AWARDS &amp; HONORS</span>
+            <span class="theme-mode-tag dark">● DISTINCTION &amp; LEADERSHIP</span>
+          </div>
+          <h2 class="sec-title">Awards &amp; Recognition</h2>
+          <span class="sec-desc"
+            >PROVEN MERIT IN TECHNICAL DEFENSE, SYSTEM ARCHITECTURE, INNOVATION PITCHING &amp; LEADERSHIP</span
+          >
         </div>
 
-        <div class="skills-cat fade-in">
-          <div class="skill-cat-header">FRONTEND LAYER</div>
-          <div class="skill-cat-header">BACKEND &amp; DATA</div>
-          <div class="skill-cat-header">TOOLS &amp; DESIGN</div>
-        </div>
-        <div class="skills-grid fade-in" id="skillsGrid">
-          <!-- FRONTEND -->
-          <div class="skill-cell">
-            <div class="skill-name">React.js</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="78"></div>
+        <div class="awards-showcase-list">
+          <!-- Award 1: FYP Best Presenter -->
+          <div class="award-showcase-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="award-details-col">
+              <div class="award-header-row">
+                <span class="award-badge-pill gold">★ Best Presenter Award</span>
+                <span class="award-date-chip">04/2026</span>
+              </div>
+              <h3 class="award-title">Final Year Project Best Presenter Award</h3>
+              <div class="award-org">UNITAR International University</div>
+              <p class="award-narrative">
+                Awarded Best Presenter for technical defense, system architecture demonstration, and research articulation in Major Software Engineering Project. Evaluated on full-stack architecture, comprehensive testing coverage, and technical articulation before faculty judges.
+              </p>
+              <div class="award-tags-row">
+                <span class="award-tech-tag">Technical Defense</span>
+                <span class="award-tech-tag">Software Architecture</span>
+                <span class="award-tech-tag">Live Demonstration</span>
+              </div>
+              <div class="award-action-row">
+                <button class="btn-pill-light" onclick="openAwardLightbox('award-1')">
+                  <span>View Photos (3)</span>
+                  <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="skill-meta">
-              Hooks · State Management · SPA Architecture
+
+            <!-- Multi-Picture Gallery Viewer -->
+            <div class="award-gallery-col" id="gallery-award-1">
+              <div class="award-main-view" onclick="openAwardLightbox('award-1')">
+                <div class="award-photo-frame" id="display-award-1">
+                  <!-- Real picture from awards folder (editable here or in script.js) -->
+                  <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43.jpeg" alt="Stage Commendation" class="award-real-photo">
+                </div>
+                <div class="award-view-overlay">
+                  <span class="overlay-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    Enlarge Image
+                  </span>
+                  <span class="photo-counter" id="counter-award-1">Photo 1 of 3</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="award-thumb-strip">
+                <button class="award-thumb-btn active" onclick="switchAwardPhoto('award-1', 1)" aria-label="View Stage Award">
+                  <div class="thumb-mini gold">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43.jpeg" class="thumb-mini-img" alt="Stage Award">
+                  </div>
+                  <span>Stage Award</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-1', 2)" aria-label="View Presentation">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.42.jpeg" class="thumb-mini-img" alt="Presentation">
+                  </div>
+                  <span>Presentation</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-1', 3)" aria-label="View Defense">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.42 (1).jpeg" class="thumb-mini-img" alt="Defense">
+                  </div>
+                  <span>Defense</span>
+                </button>
+              </div>
             </div>
           </div>
-          <!-- BACKEND -->
-          <div class="skill-cell">
-            <div class="skill-name">Node.js + Express</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="60"></div>
+
+          <!-- Award 2: System Analysis & Design Best Idea Pitching -->
+          <div class="award-showcase-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="award-details-col">
+              <div class="award-header-row">
+                <span class="award-badge-pill emerald">★ 1st Place Pitching</span>
+                <span class="award-date-chip">09/2024</span>
+              </div>
+              <h3 class="award-title">System Analysis &amp; Design Best Idea Pitching</h3>
+              <div class="award-org">UNITAR International University</div>
+              <p class="award-narrative">
+                Recognized with 1st place award for technical innovation pitching, systems requirements engineering, and stakeholder value delivery. Presented an end-to-end enterprise solution architecture solving real-world operational bottlenecks.
+              </p>
+              <div class="award-tags-row">
+                <span class="award-tech-tag">1st Place Overall</span>
+                <span class="award-tech-tag">Systems Engineering</span>
+                <span class="award-tech-tag">Innovation Pitch</span>
+              </div>
+              <div class="award-action-row">
+                <button class="btn-pill-light" onclick="openAwardLightbox('award-2')">
+                  <span>View Photos (3)</span>
+                  <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="skill-meta">
-              REST API · Middleware · JWT Authentication
+
+            <!-- Multi-Picture Gallery Viewer -->
+            <div class="award-gallery-col" id="gallery-award-2">
+              <div class="award-main-view" onclick="openAwardLightbox('award-2')">
+                <div class="award-photo-frame" id="display-award-2">
+                  <!-- Real picture from awards folder (editable here or in script.js) -->
+                  <img src="awards/WhatsApp Image 2026-09-10 at 21.16.44.jpeg" alt="1st Prize Team Presentation" class="award-real-photo">
+                </div>
+                <div class="award-view-overlay">
+                  <span class="overlay-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    Enlarge Image
+                  </span>
+                  <span class="photo-counter" id="counter-award-2">Photo 1 of 3</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="award-thumb-strip">
+                <button class="award-thumb-btn active" onclick="switchAwardPhoto('award-2', 1)" aria-label="View 1st Prize Team">
+                  <div class="thumb-mini emerald">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.44.jpeg" class="thumb-mini-img" alt="1st Prize Team">
+                  </div>
+                  <span>1st Prize Team</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-2', 2)" aria-label="View Award Hamper">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.44 (1).jpeg" class="thumb-mini-img" alt="Award Hamper">
+                  </div>
+                  <span>Award Hamper</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-2', 3)" aria-label="View Project Poster">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43 (3).jpeg" class="thumb-mini-img" alt="Project Poster">
+                  </div>
+                  <span>Project Poster</span>
+                </button>
+              </div>
             </div>
           </div>
-          <!-- TOOLS -->
-          <div class="skill-cell">
-            <div class="skill-name">Figma</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="60"></div>
+
+          <!-- Award 3: 10x Consecutive Dean's List Distinction -->
+          <div class="award-showcase-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="award-details-col">
+              <div class="award-header-row">
+                <span class="award-badge-pill purple">★ 10 Semesters Continuous Honor</span>
+                <span class="award-date-chip">2023 – 2026</span>
+              </div>
+              <h3 class="award-title">10x Consecutive Dean's List Distinction</h3>
+              <div class="award-org">UNITAR International University · CGPA 3.75 / 4.00</div>
+              <p class="award-narrative">
+                Achieved Dean's List honors for every single semester across Foundation through all 8 semesters of BIT (Hons) Software Engineering. Completed 117 credit hours with sustained academic distinction and continuous faculty commendations.
+              </p>
+              <div class="award-tags-row">
+                <span class="award-tech-tag">10x Dean's List</span>
+                <span class="award-tech-tag">CGPA 3.75</span>
+                <span class="award-tech-tag">117 Credits Completed</span>
+              </div>
+              <div class="award-action-row">
+                <button class="btn-pill-light" onclick="openAwardLightbox('award-3')">
+                  <span>View Photos (3)</span>
+                  <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="skill-meta">
-              UI/UX Design · Prototyping · Design Systems
+
+            <!-- Multi-Picture Gallery Viewer -->
+            <div class="award-gallery-col" id="gallery-award-3">
+              <div class="award-main-view" onclick="openAwardLightbox('award-3')">
+                <div class="award-photo-frame" id="display-award-3">
+                  <!-- Real picture from awards folder (editable here or in script.js) -->
+                  <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43 (1).jpeg" alt="Dean's List Award Ceremony" class="award-real-photo">
+                </div>
+                <div class="award-view-overlay">
+                  <span class="overlay-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    Enlarge Image
+                  </span>
+                  <span class="photo-counter" id="counter-award-3">Photo 1 of 3</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="award-thumb-strip">
+                <button class="award-thumb-btn active" onclick="switchAwardPhoto('award-3', 1)" aria-label="View Dean Award 1">
+                  <div class="thumb-mini purple">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43 (1).jpeg" class="thumb-mini-img" alt="Dean Award 1">
+                  </div>
+                  <span>Dean Award 1</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-3', 2)" aria-label="View Dean Award 2">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.43 (2).jpeg" class="thumb-mini-img" alt="Dean Award 2">
+                  </div>
+                  <span>Dean Award 2</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-3', 3)" aria-label="View Dean Award 3">
+                  <div class="thumb-mini">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.16.44 (2).jpeg" class="thumb-mini-img" alt="Dean Award 3">
+                  </div>
+                  <span>Dean Award 3</span>
+                </button>
+              </div>
             </div>
           </div>
-          <!-- FRONTEND -->
-          <div class="skill-cell">
-            <div class="skill-name">Tailwind CSS</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="85"></div>
+
+          <!-- Award 4: Project Lead – AI Education Workshop -->
+          <div class="award-showcase-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="award-details-col">
+              <div class="award-header-row">
+                <span class="award-badge-pill blue">✦ 200 Students Reached</span>
+                <span class="award-date-chip">08/2025</span>
+              </div>
+              <h3 class="award-title">Project Lead – AI Education Workshop</h3>
+              <div class="award-org">Petaling Jaya, Selangor · UNITAR Outreach</div>
+              <p class="award-narrative">
+                Headed a 10-member committee organizing an AI workshop for 200 Form 4 secondary students across 5 regional schools, delivering sessions on Generative AI applications and ethics. Orchestrated lab setups, hands-on prompts, and student engagement.
+              </p>
+              <div class="award-tags-row">
+                <span class="award-tech-tag">Committee Leadership</span>
+                <span class="award-tech-tag">200 High School Students</span>
+                <span class="award-tech-tag">GenAI Education</span>
+              </div>
+              <div class="award-action-row">
+                <button class="btn-pill-light" onclick="openAwardLightbox('award-4')">
+                  <span>View Photos (3)</span>
+                  <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="skill-meta">
-              Utility-First · Responsive · Custom Theming
-            </div>
-          </div>
-          <!-- BACKEND -->
-          <div class="skill-cell">
-            <div class="skill-name">PostgreSQL</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="60"></div>
-            </div>
-            <div class="skill-meta">
-              Relational Schema · SQL · pg Driver · 3NF
-            </div>
-          </div>
-          <!-- BACKEND -->
-          <div class="skill-cell">
-            <div class="skill-name">MySQL</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="60"></div>
-            </div>
-            <div class="skill-meta">Relational Schema · SQL · PHPMyAdmin</div>
-          </div>
-          <!-- TOOLS -->
-          <div class="skill-cell">
-            <div class="skill-name">Software Testing</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="80"></div>
-            </div>
-            <div class="skill-meta">Unit · Integration · QA Methodology</div>
-          </div>
-          <!-- FRONTEND -->
-          <div class="skill-cell">
-            <div class="skill-name">daisyUI</div>
-            <div class="skill-bar">
-              <div class="skill-fill" data-w="90"></div>
-            </div>
-            <div class="skill-meta">
-              Component Libraries · Theme Customisation
+
+            <!-- Multi-Picture Gallery Viewer -->
+            <div class="award-gallery-col" id="gallery-award-4">
+              <div class="award-main-view" onclick="openAwardLightbox('award-4')">
+                <div class="award-photo-frame" id="display-award-4">
+                  <!-- Real picture from awards folder (editable here or in script.js) -->
+                  <img src="awards/WhatsApp Image 2026-09-10 at 21.36.57.jpeg" alt="Project Lead AI Education Workshop" class="award-real-photo">
+                </div>
+                <div class="award-view-overlay">
+                  <span class="overlay-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    Enlarge Image
+                  </span>
+                  <span class="photo-counter" id="counter-award-4">Photo 1 of 3</span>
+                </div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="award-thumb-strip">
+                <button class="award-thumb-btn active" onclick="switchAwardPhoto('award-4', 1)" aria-label="View Speaker">
+                  <div class="thumb-mini blue">
+                    <img src="awards/WhatsApp Image 2026-09-10 at 21.36.57.jpeg" class="thumb-mini-img" alt="Speaker">
+                  </div>
+                  <span>Speaker</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-4', 2)" aria-label="View 200 Students">
+                  <div class="thumb-mini">
+                    <img src="awards/DSC05733-web.jpg" class="thumb-mini-img" alt="200 Students">
+                  </div>
+                  <span>200 Students</span>
+                </button>
+                <button class="award-thumb-btn" onclick="switchAwardPhoto('award-4', 3)" aria-label="View Interactive Lab">
+                  <div class="thumb-mini">
+                    <img src="awards/DSC05476-web.jpg" class="thumb-mini-img" alt="Interactive Lab">
+                  </div>
+                  <span>Interactive Lab</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════════════════════════════ EDUCATION ════════════════════════════════ -->
-    <section id="education">
-      <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-num">03</span>
-          <h2 class="section-title">EDUCATION</h2>
-          <div class="section-line"></div>
-          <span class="section-count">ACADEMIC BACKGROUND</span>
+    <!-- Awards Lightbox Modal -->
+    <div id="awardLightboxModal" class="award-lightbox-modal" onclick="closeAwardLightbox(event)">
+      <div class="award-lightbox-dialog" onclick="event.stopPropagation()">
+        <button class="lightbox-close-btn" onclick="closeAwardLightbox()" aria-label="Close Lightbox">✕</button>
+        <div class="lightbox-stage" id="lightboxStage">
+          <!-- Populated dynamically by JS -->
         </div>
-
-        <div class="edu-grid fade-in">
-          <!-- SPM -->
-          <div class="edu-card">
-            <h3 class="edu-level">Sijil Pelajaran Malaysia (SPM)</h3>
-            <p class="edu-school">SMK Sg Kapar Indah</p>
-            <table class="data-table">
-              <tr><td>Bahasa Melayu</td><td>B</td></tr>
-              <tr><td>Bahasa Inggeris</td><td>A-</td></tr>
-              <tr><td>Pendidikan Moral</td><td>A-</td></tr>
-              <tr><td>Mathematics</td><td>A</td></tr>
-              <tr><td>Science</td><td>A</td></tr>
-              <tr><td>Sejarah</td><td>C+</td></tr>
-              <tr><td>Additional Mathematics</td><td>A</td></tr>
-              <tr><td>Prinsip Akaun</td><td>B</td></tr>
-              <tr><td>Sains Komputer</td><td>A-</td></tr>
-              
-            </table>
+        <div class="lightbox-footer">
+          <button class="lightbox-nav-btn prev" onclick="prevLightboxPhoto()" aria-label="Previous Photo">‹ Previous</button>
+          <div class="lightbox-info">
+            <span class="lightbox-caption" id="lightboxCaption">Award Photo</span>
+            <span class="lightbox-counter" id="lightboxCounter">1 / 3</span>
           </div>
-
-          <!-- Foundation -->
-          <div class="edu-card">
-            <h3 class="edu-level">Foundation in Information Technology</h3>
-            <p class="edu-school">UNITAR International University</p>
-            <details class="accordion">
-              <summary class="accordion-header">Semester 1</summary>
-              <div class="accordion-content">
-                <span class="pointer-info">Pointer: 3.61 / 4.0</span>
-                <table class="data-table">
-                  <tr><td>Fundamentals of Programming</td><td>A+</td></tr>
-                  <tr><td>Fundamentals of Business Management in Digital Economy</td><td>B</td></tr>
-                  <tr><td>English for Communication</td><td>B</td></tr>
-                  <tr><td>Fundamentals of Lifelong Learning and Personal Development</td><td>A</td></tr>
-                  <tr><td>Fundamental of Database and Information System</td><td>A+</td></tr>
-                </table>
-              </div>
-            </details>
-            <details class="accordion">
-              <summary class="accordion-header">Semester 2</summary>
-              <div class="accordion-content">
-                <span class="pointer-info">Pointer: 3.95 / 4.0</span>
-                <table class="data-table">
-                  <tr><td>Listening and Speaking Skills</td><td>A-</td></tr>
-                  <tr><td>Fundamentals of Statistics</td><td>A</td></tr>
-                  <tr><td>Ethics Theory and Practice</td><td>A</td></tr>
-                  <tr><td>Learning Skills</td><td>A</td></tr>
-                  <tr><td>Career Portfolio</td><td>S</td></tr>
-                  <tr><td>Fundamentals of Information Technology</td><td>A+</td></tr>
-                </table>
-              </div>
-            </details>
-            <details class="accordion">
-              <summary class="accordion-header">Semester 3</summary>
-              <div class="accordion-content">
-                <span class="pointer-info">Pointer: 3.72 / 4.0</span>
-                <table class="data-table">
-                  <tr><td>Listening and Speaking Skills</td><td>A-</td></tr>
-                  <tr><td>Fundamentals of Mathematics</td><td>B+</td></tr>
-                  <tr><td>Economics and Society</td><td>A</td></tr>
-                  <tr><td>Reading and Writing Skills</td><td>C+</td></tr>
-                  <tr><td>Young Leaders Workshop</td><td>S</td></tr>
-                  <tr><td>Fundamentals of Multimedia and Web Publishing</td><td>A+</td></tr>
-                </table>
-              </div>
-            </details>
-          </div>
-
-          <!-- Bachelors -->
-          <div class="edu-card span-2">
-            <h3 class="edu-level">Bachelor in Information Technology (Hons) Software Engineering</h3>
-            <p class="edu-school">UNITAR International University · Expected 2026</p>
-            <div class="accordion-grid">
-              <details class="accordion">
-                <summary class="accordion-header">Semester 1</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.85 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Penghayatan Etika dan Peradaban</td><td>B+</td></tr>
-                    <tr><td>Computer Organization and Architecture</td><td>A</td></tr>
-                    <tr><td>Discrete Mathematics</td><td>A</td></tr>
-                    <tr><td>Information Security Management</td><td>A-</td></tr>
-                    <tr><td>Introduction to Information System</td><td>A</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 2</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.90 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Integriti dan AntiRasuah</td><td>A-</td></tr>
-                    <tr><td>Data Communication and Computer Networking</td><td>A-</td></tr>
-                    <tr><td>Databases</td><td>A</td></tr>
-                    <tr><td>Programming Principles and Techniques</td><td>A</td></tr>
-                    <tr><td>English for Academic Purposes</td><td>A</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 3</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.75 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Falsafah dan Isu Semasa</td><td>B+</td></tr>
-                    <tr><td>Internet Programming</td><td>B+</td></tr>
-                    <tr><td>Human Computer Interaction</td><td>A</td></tr>
-                    <tr><td>Design Thinking</td><td>A-</td></tr>
-                    <tr><td>Business Communication</td><td>A+</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 4</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.70 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Business Law</td><td>B</td></tr>
-                    <tr><td>Algorithms and Data Structures</td><td>A-</td></tr>
-                    <tr><td>Systems Analysis and Design</td><td>A</td></tr>
-                    <tr><td>Object-Oriented Programming</td><td>A</td></tr>
-                    <tr><td>Operating System</td><td>A</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 5</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.54 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Computer Ethics and Cyber Laws</td><td>B+</td></tr>
-                    <tr><td>Recreational Event Planning</td><td>A-</td></tr>
-                    <tr><td>Software Testing and Maintenance</td><td>B+</td></tr>
-                    <tr><td>Web Engineering</td><td>B+</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 6</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.95 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Principles of Marketing</td><td>A-</td></tr>
-                    <tr><td>Principles of Artificial Intelligence</td><td>A</td></tr>
-                    <tr><td>Requirements Engineering</td><td>A</td></tr>
-                    <tr><td>Object Oriented Software Engineering</td><td>A</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 7</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: 3.92 / 4.0</span>
-                  <table class="data-table">
-                    <tr><td>Minor Project</td><td>A-</td></tr>
-                    <tr><td>Software Quality and Metrics</td><td>A</td></tr>
-                    <tr><td>Quantitative Methods</td><td>A+</td></tr>
-                  </table>
-                </div>
-              </details>
-              <details class="accordion">
-                <summary class="accordion-header">Semester 8 (Current)</summary>
-                <div class="accordion-content">
-                  <span class="pointer-info">Pointer: TBD</span>
-                  <table class="data-table">
-                    <tr><td>Software Architecture and Design</td><td>TBD</td></tr>
-                    <tr><td>Principles of Economics</td><td>TBD</td></tr>
-                    <tr><td>Major Project</td><td>TBD</td></tr>
-                    <tr><td>Software Project Management</td><td>TBD</td></tr>
-                  </table>
-                </div>
-              </details>
-            </div>
-          </div>
+          <button class="lightbox-nav-btn next" onclick="nextLightboxPhoto()" aria-label="Next Photo">Next ›</button>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ════════════════════════════════ PROJECTS ════════════════════════════════ -->
+    <!-- ════════════════════════════════ SECTION 4: PROJECTS (WHITE BACKGROUND) ════════════════════════════════ -->
     <section id="projects">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-num">04</span>
-          <h2 class="section-title">PROJECTS</h2>
-          <div class="section-line"></div>
-          <span class="section-count">05 CASE FILES</span>
+        <div class="section-head-light" data-aos="fade-up">
+          <div class="section-head-meta">
+            <span class="sec-num">// 03 PROJECTS</span>
+            <span class="theme-mode-tag light">○ LIGHT THEME</span>
+          </div>
+          <h2 class="sec-title">Selected Works</h2>
+          <span class="sec-desc"
+            >PRODUCTION FULL-STACK APPLICATIONS · SYSTEM ARCHITECTURES · CASE
+            FILES</span
+          >
         </div>
 
-        <div class="proj-grid fade-in">
+        <div class="project-showcases-list">
           <!-- PROJECT 001: Mr Tasky -->
-          <div class="proj-card">
-            <div class="proj-header">
-              <div>
-                <div class="proj-index">CASE_FILE // PROJECT_001</div>
-                <div class="proj-name">Mr. Tasky</div>
-                <div class="proj-type">Service Listing Web Application</div>
+          <div class="project-showcase-row-light" data-aos="fade-up">
+            <div class="project-detail-col">
+              <span class="project-tag-pill-light">Full-Stack Web App</span>
+              <h3 class="project-showcase-title-light">Mr. Tasky</h3>
+              <p class="project-summary-text-light">
+                A multi-role service marketplace connecting customers with
+                verified local service providers. Features dynamic geolocation
+                mapping, role-based access control, and PostgreSQL relational
+                data persistence.
+              </p>
+
+              <div class="project-action-btns">
+                <button
+                  type="button"
+                  class="btn-read-case-study"
+                  data-project="mr-tasky"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    ></path>
+                  </svg>
+                  Read Case Study
+                </button>
+                <a
+                  href="https://mr-tasky-frontend-trial.vercel.app/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visit-site-light"
+                  >Visit Site ↗</a
+                >
               </div>
-              <span class="stack-badge">PERN</span>
             </div>
-            <div class="proj-stats">
-              <div class="stat-cell">
-                <span class="stat-val a">03</span>
-                <span class="stat-key">USER ROLES</span>
+
+            <!-- Right Browser Frame with Live Preview & Architecture Switcher -->
+            <div class="project-preview-viewport">
+              <div class="project-browser-frame">
+                <div class="browser-chrome-header">
+                  <div class="browser-window-controls">
+                    <span class="browser-dot dot-close"></span>
+                    <span class="browser-dot dot-min"></span>
+                    <span class="browser-dot dot-max"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <svg
+                      class="browser-lock-icon"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect
+                        x="3"
+                        y="11"
+                        width="18"
+                        height="11"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span class="browser-url-text"
+                      >mr-tasky-frontend-trial.vercel.app</span
+                    >
+                  </div>
+                  <div class="browser-toolbar-actions">
+                    <div class="browser-view-toggle">
+                      <button
+                        type="button"
+                        class="view-toggle-btn active"
+                        data-view="live"
+                        title="Interactive Live Website"
+                      >
+                        <span class="live-dot-pulse"></span>
+                        Live
+                      </button>
+                      <button
+                        type="button"
+                        class="view-toggle-btn"
+                        data-view="arch"
+                        title="System Architecture Code"
+                      >
+                        Code
+                      </button>
+                    </div>
+                    <a
+                      href="https://mr-tasky-frontend-trial.vercel.app/main"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="browser-external-link"
+                      title="Open live site in new tab"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="browser-viewport-screen">
+                  <!-- Live Iframe View -->
+                  <div class="browser-live-view active">
+                    <div class="iframe-loading-indicator">
+                      <div class="spinner-dot"></div>
+                      <span>Connecting to live site...</span>
+                    </div>
+                    <iframe
+                      src="https://mr-tasky-frontend-trial.vercel.app/main"
+                      class="live-project-iframe"
+                      data-target-width="1280"
+                      loading="lazy"
+                      title="Mr. Tasky Live Preview"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    ></iframe>
+                    <div class="iframe-interaction-hint">
+                      Interactive Preview · Scroll &amp; Click Inside
+                    </div>
+                  </div>
+
+                  <!-- Architecture Code View -->
+                  <div class="browser-arch-view">
+                    <div class="viewport-arch-content-dark">
+                      <div>
+                        <span class="code-hi">CLIENT</span> &nbsp;→ [React.js +
+                        Tailwind + daisyUI]
+                      </div>
+                      <div>
+                        <span class="code-dim"
+                          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳
+                          Leaflet Geolocation Map API</span
+                        >
+                      </div>
+                      <div>
+                        <span class="code-hi">SERVER</span> &nbsp;→ [Node.js +
+                        Express REST APIs]
+                      </div>
+                      <div>
+                        <span class="code-dim"
+                          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳
+                          JWT Auth + RBAC Middleware</span
+                        >
+                      </div>
+                      <div>
+                        <span class="code-hi">DATA</span> &nbsp;&nbsp;&nbsp;→
+                        [PostgreSQL Relational 3NF]
+                      </div>
+                      <div
+                        style="
+                          margin-top: 14px;
+                          border-top: 1px solid rgba(255, 255, 255, 0.12);
+                          padding-top: 10px;
+                        "
+                      >
+                        <span class="code-dim"
+                          >// Key Capabilities: Contractor Verification ·
+                          Dynamic Map · Live Order Status</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cell">
-                <span class="stat-val">REST</span>
-                <span class="stat-key">API PATTERN</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val">RBAC</span>
-                <span class="stat-key">SECURITY</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val g">IN-DEV</span>
-                <span class="stat-key">STATUS</span>
-              </div>
-            </div>
-            <div class="proj-arch">
-              <div class="arch-label">// System Architecture</div>
-              <div>CLIENT &nbsp; → [<span class="k">React</span> + Tailwind + DaisyUI]</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ Dynamic map API (Geolocation)</span></div>
-              <div>SERVER &nbsp; → [<span class="k">Node.js</span> + Express]</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ RESTful APIs</span></div>
-              <div>DATA &nbsp;&nbsp;&nbsp; → [<span class="k">PostgreSQL</span>]</div>
-            </div>
-            <div class="proj-feat">
-              <span class="feat-tag on">RBAC Auth</span>
-              <span class="feat-tag on">Geolocation</span>
-              <span class="feat-tag on">Real-time DB</span>
-              <span class="feat-tag on">REST API</span>
-              <span class="feat-tag on">Service Listings</span>
-              <span class="feat-tag on">Provider Verification</span>
-              <span class="feat-tag on">Category CRUD</span>
-              <span class="feat-tag on">Agile Scrum</span>
-              <span class="feat-tag on">OpenStreetMap + Leaflet</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://mr-tasky-frontend-trial.vercel.app/main" class="pr" style="color:var(--green)">OPEN LIVE SITE ↗</a>
-              
             </div>
           </div>
 
           <!-- PROJECT 002: Book4U -->
-          <div class="proj-card">
-            <div class="proj-header">
-              <div>
-                <div class="proj-index">CASE_FILE // PROJECT_002</div>
-                <div class="proj-name">Book4U</div>
-                <div class="proj-type">Event Management Web Application</div>
+          <div class="project-showcase-row-light" data-aos="fade-up">
+            <div class="project-detail-col">
+              <span class="project-tag-pill-light">Full-Stack Web App</span>
+              <h3 class="project-showcase-title-light">Book4U</h3>
+              <p class="project-summary-text-light">
+                A comprehensive event booking and ticketing portal built with
+                PHP and MySQL. Implements secure Stripe sandbox gateway payments
+                and automated confirmation email dispatch.
+              </p>
+
+              <div class="project-action-btns">
+                <button
+                  type="button"
+                  class="btn-read-case-study"
+                  data-project="book4u"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    ></path>
+                  </svg>
+                  Read Case Study
+                </button>
+                <a
+                  href="https://book4u-r3vx.onrender.com/homepage.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visit-site-light"
+                  >Visit Site ↗</a
+                >
               </div>
-              <span class="stack-badge">PHP/MYSQL</span>
             </div>
-            <div class="proj-stats">
-              <div class="stat-cell">
-                <span class="stat-val a">Stripe</span>
-                <span class="stat-key">PAYMENT</span>
+
+            <!-- Right Browser Frame with Live Preview & Architecture Switcher -->
+            <div class="project-preview-viewport">
+              <div class="project-browser-frame">
+                <div class="browser-chrome-header">
+                  <div class="browser-window-controls">
+                    <span class="browser-dot dot-close"></span>
+                    <span class="browser-dot dot-min"></span>
+                    <span class="browser-dot dot-max"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <svg
+                      class="browser-lock-icon"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect
+                        x="3"
+                        y="11"
+                        width="18"
+                        height="11"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span class="browser-url-text"
+                      >book4u-r3vx.onrender.com</span
+                    >
+                  </div>
+                  <div class="browser-toolbar-actions">
+                    <div class="browser-view-toggle">
+                      <button
+                        type="button"
+                        class="view-toggle-btn active"
+                        data-view="live"
+                        title="Interactive Live Website"
+                      >
+                        <span class="live-dot-pulse"></span>
+                        Live
+                      </button>
+                      <button
+                        type="button"
+                        class="view-toggle-btn"
+                        data-view="arch"
+                        title="System Architecture Code"
+                      >
+                        Code
+                      </button>
+                    </div>
+                    <a
+                      href="https://book4u-r3vx.onrender.com/homepage.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="browser-external-link"
+                      title="Open live site in new tab"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="browser-viewport-screen">
+                  <!-- Live Iframe View -->
+                  <div class="browser-live-view active">
+                    <div class="iframe-loading-indicator">
+                      <div class="spinner-dot"></div>
+                      <span>Connecting to live site...</span>
+                    </div>
+                    <iframe
+                      src="https://book4u-r3vx.onrender.com/homepage.html"
+                      class="live-project-iframe"
+                      data-target-width="1280"
+                      loading="lazy"
+                      title="Book4U Live Preview"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    ></iframe>
+                    <div class="iframe-interaction-hint">
+                      Interactive Preview · Scroll &amp; Click Inside
+                    </div>
+                  </div>
+
+                  <!-- Architecture Code View -->
+                  <div class="browser-arch-view">
+                    <div class="viewport-arch-content-dark">
+                      <div>
+                        [01]
+                        <span class="code-hi">User Auth</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ PHP Backend Validation
+                      </div>
+                      <div>
+                        [02]
+                        <span class="code-hi">Event Select</span> &nbsp;&nbsp;→
+                        MySQL Dynamic Record Fetch
+                      </div>
+                      <div>
+                        [03]
+                        <span class="code-hi">Stripe Pay</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;→ Secure Payment Gateway API
+                      </div>
+                      <div>
+                        [04] <span class="code-hi">Confirmation</span> &nbsp;→
+                        Automated Ticket Email Dispatch
+                      </div>
+                      <div
+                        style="
+                          margin-top: 14px;
+                          border-top: 1px solid rgba(255, 255, 255, 0.12);
+                          padding-top: 10px;
+                        "
+                      >
+                        <span class="code-dim"
+                          >// Features: Dynamic Seat Tiering · Instant Ticket
+                          Dispatch · PHPUnit Tested</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cell">
-                <span class="stat-val">MVC</span>
-                <span class="stat-key">ARCHITECTURE</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val b">XAMPP</span>
-                <span class="stat-key">MYSQL SERVER</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val g">PRODUCTION</span>
-                <span class="stat-key">LOCALHOST</span>
-              </div>
-            </div>
-            <div class="proj-arch">
-              <div class="arch-label">// Core Workflow</div>
-              <div>[01] <span class="k">User Registration</span> &nbsp;→ PHP Backend</div>
-              <div>[02] <span class="k">Event Selection</span> &nbsp;&nbsp;→ MySQL Dynamic Fetch</div>
-              <div>[03] <span class="k">Stripe Gateway</span> &nbsp;&nbsp;→ Secure Sandbox Payment API</div>
-              <div>[04] <span class="k">Confirmation</span> &nbsp;&nbsp;&nbsp;&nbsp;→ Automated Email Dispatch</div>
-            </div>
-            <div class="proj-feat">
-              <span class="feat-tag on">Stripe Checkout</span>
-              <span class="feat-tag on">Unit Testing</span>
-              <span class="feat-tag on">Automated Mail</span>
-              <span class="feat-tag on">Event Booking</span>
-              <span class="feat-tag on">Ticket Generation</span>
-              <span class="feat-tag on">Create Events</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://book4u-r3vx.onrender.com/homepage.html" class="pr" style="color:var(--green)">OPEN LIVE SITE ↗</a>
             </div>
           </div>
 
           <!-- PROJECT 003: Saviour -->
-          <div class="proj-card">
-            <div class="proj-header">
-              <div>
-                <div class="proj-index">CASE_FILE // PROJECT_003</div>
-                <div class="proj-name">Saviour</div>
-                <div class="proj-type">Healthcare Mobile Application</div>
+          <div class="project-showcase-row-light" data-aos="fade-up">
+            <div class="project-detail-col">
+              <span class="project-tag-pill-light"
+                >Healthcare UI/UX Prototype</span
+              >
+              <h3 class="project-showcase-title-light">Saviour</h3>
+              <p class="project-summary-text-light">
+                A mobile healthcare application prototype designed following
+                Human-Computer Interaction (HCI) standards. Includes emergency
+                SOS dispatch flow, real-time hospital locator map, and Dr. AI
+                symptom checker interface.
+              </p>
+
+              <div class="project-action-btns">
+                <button
+                  type="button"
+                  class="btn-read-case-study"
+                  data-project="saviour"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    ></path>
+                  </svg>
+                  Read Case Study
+                </button>
+                <a
+                  href="https://www.figma.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visit-site-light"
+                  >Figma Prototype ↗</a
+                >
               </div>
-              <span class="stack-badge">UX/UI</span>
             </div>
-            <div class="proj-stats">
-              <div class="stat-cell">
-                <span class="stat-val a">Wireframes</span>
-                <span class="stat-key">PROTOTYPE</span>
+
+            <!-- Right Browser Frame with Prototype Simulator & Architecture Switcher -->
+            <div class="project-preview-viewport">
+              <div class="project-browser-frame">
+                <div class="browser-chrome-header">
+                  <div class="browser-window-controls">
+                    <span class="browser-dot dot-close"></span>
+                    <span class="browser-dot dot-min"></span>
+                    <span class="browser-dot dot-max"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <svg
+                      class="browser-lock-icon"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect
+                        x="3"
+                        y="11"
+                        width="18"
+                        height="11"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span class="browser-url-text"
+                      >figma.com/proto/saviour-healthcare</span
+                    >
+                  </div>
+                  <div class="browser-toolbar-actions">
+                    <div class="browser-view-toggle">
+                      <button
+                        type="button"
+                        class="view-toggle-btn active"
+                        data-view="live"
+                        title="Interactive Prototype Simulator"
+                      >
+                        <span class="live-dot-pulse"></span>
+                        Prototype
+                      </button>
+                      <button
+                        type="button"
+                        class="view-toggle-btn"
+                        data-view="arch"
+                        title="HCI Heuristic Matrix"
+                      >
+                        Code
+                      </button>
+                    </div>
+                    <a
+                      href="https://www.figma.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="browser-external-link"
+                      title="Open Figma Spec"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="browser-viewport-screen">
+                  <!-- Prototype Interactive Simulator View -->
+                  <div class="browser-live-view active">
+                    <div class="prototype-simulator-screen">
+                      <div class="prototype-sim-header">
+                        <span
+                          style="
+                            font-family: var(--font-heading);
+                            font-size: 13px;
+                            font-weight: 800;
+                            letter-spacing: 0.04em;
+                          "
+                          >SAVIOUR // MOBILE HCI</span
+                        >
+                        <span class="prototype-sim-badge"
+                          >EMERGENCY SYSTEM</span
+                        >
+                      </div>
+                      <div class="prototype-tabs-nav">
+                        <button
+                          type="button"
+                          class="prototype-tab-btn active"
+                          data-flow="sos"
+                        >
+                          1. Emergency SOS
+                        </button>
+                        <button
+                          type="button"
+                          class="prototype-tab-btn"
+                          data-flow="map"
+                        >
+                          2. Hospital Locator
+                        </button>
+                        <button
+                          type="button"
+                          class="prototype-tab-btn"
+                          data-flow="ai"
+                        >
+                          3. Dr. AI Triage
+                        </button>
+                      </div>
+                      <div class="prototype-sim-body">
+                        <div class="prototype-flow-card" id="saviourFlowCard">
+                          <h5 id="saviourFlowTitle">
+                            1-Tap Emergency SOS Broadcast
+                          </h5>
+                          <p id="saviourFlowDesc">
+                            Triggers instant high-priority GPS coordinates
+                            transmission to nearest responders with audible
+                            confirmation countdown and silent override option.
+                          </p>
+                          <a
+                            href="https://www.figma.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="prototype-action-cta"
+                          >
+                            Inspect Figma Interaction System ↗
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Architecture View -->
+                  <div class="browser-arch-view">
+                    <div class="viewport-arch-content-dark">
+                      <div>
+                        [01]
+                        <span class="code-hi">SOS Dispatch</span> &nbsp;&nbsp;→
+                        Emergency Tracking UX Flow
+                      </div>
+                      <div>
+                        [02]
+                        <span class="code-hi">Live Locator</span> &nbsp;&nbsp;→
+                        Hospital Navigation Map UI
+                      </div>
+                      <div>
+                        [03]
+                        <span class="code-hi">Dr. AI</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                        Symptom Checker Conversational UI
+                      </div>
+                      <div>
+                        [04] <span class="code-hi">Appointments</span> &nbsp;→
+                        Booking &amp; Record Management
+                      </div>
+                      <div
+                        style="
+                          margin-top: 14px;
+                          border-top: 1px solid rgba(255, 255, 255, 0.12);
+                          padding-top: 10px;
+                        "
+                      >
+                        <span class="code-dim"
+                          >// Tested against Nielsen's 10 Usability Heuristics
+                          &amp; WCAG AAA</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cell">
-                <span class="stat-val">HCI</span>
-                <span class="stat-key">PRINCIPLES</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val">Map</span>
-                <span class="stat-key">USER FLOWS</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val b">Figma</span>
-                <span class="stat-key">PRIMARY TOOL</span>
-              </div>
-            </div>
-            <div class="proj-arch">
-              <div class="arch-label">// Application Features</div>
-              <div>[01] <span class="k">SOS Dispatch</span> &nbsp;&nbsp;&nbsp;→ Emergency Tracking Flow</div>
-              <div>[02] <span class="k">Live Locator</span> &nbsp;&nbsp;&nbsp;→ Real-Time Hospital Map</div>
-              <div>[03] <span class="k">Dr. AI</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Symptom Checker UI</div>
-              <div>[04] <span class="k">Appointments</span> &nbsp;&nbsp;&nbsp;→ Booking Management</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Compliant with HCI Guidelines</span></div>
-            </div>
-            <div class="proj-feat">
-              <span class="feat-tag on">Wireframing</span>
-              <span class="feat-tag on">Prototyping</span>
-              <span class="feat-tag on">User Flows</span>
-              <span class="feat-tag on">Interface Design</span>
-            </div>
-            <div class="proj-links">
-              
             </div>
           </div>
 
-          <!-- PROJECT 004: G.M.C Multimedia -->
-          <div class="proj-card">
-            <div class="proj-header">
-              <div>
-                <div class="proj-index">CASE_FILE // PROJECT_004</div>
-                <div class="proj-name">G.M.C Multimedia Center</div>
-                <div class="proj-type">Business Landing Page</div>
+          <!-- PROJECT 004: G.M.C Multimedia Center -->
+          <div class="project-showcase-row-light" data-aos="fade-up">
+            <div class="project-detail-col">
+              <span class="project-tag-pill-light"
+                >Production Web Platform</span
+              >
+              <h3 class="project-showcase-title-light">
+                G.M.C Multimedia Center
+              </h3>
+              <p class="project-summary-text-light">
+                A high-performance responsive business landing page deployed to
+                Netlify global CDN. Implements clean semantic HTML5, modern CSS3
+                layout architecture, and automated GitHub CI/CD webhooks.
+              </p>
+
+              <div class="project-action-btns">
+                <button
+                  type="button"
+                  class="btn-read-case-study"
+                  data-project="gmc"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    ></path>
+                  </svg>
+                  Read Case Study
+                </button>
+                <a
+                  href="https://gmc-multimedia-computer.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visit-site-light"
+                  >Visit Site ↗</a
+                >
+                <a
+                  href="https://github.com/denesh27/G.M.C-Multimedia-Computer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-read-case-study"
+                  style="padding: 11px 16px"
+                  >GitHub ↗</a
+                >
               </div>
-              <span class="stack-badge" style="color:var(--green);border-color:var(--green)">LIVE SITE</span>
             </div>
-            <div class="proj-stats">
-              <div class="stat-cell">
-                <span class="stat-val a">CSS</span>
-                <span class="stat-key">STYLING</span>
+
+            <!-- Right Browser Frame with Live Preview & Architecture Switcher -->
+            <div class="project-preview-viewport">
+              <div class="project-browser-frame">
+                <div class="browser-chrome-header">
+                  <div class="browser-window-controls">
+                    <span class="browser-dot dot-close"></span>
+                    <span class="browser-dot dot-min"></span>
+                    <span class="browser-dot dot-max"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <svg
+                      class="browser-lock-icon"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect
+                        x="3"
+                        y="11"
+                        width="18"
+                        height="11"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span class="browser-url-text"
+                      >gmc-multimedia-computer.netlify.app</span
+                    >
+                  </div>
+                  <div class="browser-toolbar-actions">
+                    <div class="browser-view-toggle">
+                      <button
+                        type="button"
+                        class="view-toggle-btn active"
+                        data-view="live"
+                        title="Interactive Live Website"
+                      >
+                        <span class="live-dot-pulse"></span>
+                        Live
+                      </button>
+                      <button
+                        type="button"
+                        class="view-toggle-btn"
+                        data-view="arch"
+                        title="Deployment Pipeline YAML"
+                      >
+                        Code
+                      </button>
+                    </div>
+                    <a
+                      href="https://gmc-multimedia-computer.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="browser-external-link"
+                      title="Open live site in new tab"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="browser-viewport-screen">
+                  <!-- Live Iframe View -->
+                  <div class="browser-live-view active">
+                    <div class="iframe-loading-indicator">
+                      <div class="spinner-dot"></div>
+                      <span>Connecting to live site...</span>
+                    </div>
+                    <iframe
+                      src="https://gmc-multimedia-computer.netlify.app/"
+                      class="live-project-iframe"
+                      data-target-width="1280"
+                      loading="lazy"
+                      title="GMC Multimedia Center Live Preview"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    ></iframe>
+                    <div class="iframe-interaction-hint">
+                      Interactive Preview · Scroll &amp; Click Inside
+                    </div>
+                  </div>
+
+                  <!-- Architecture Code View -->
+                  <div class="browser-arch-view">
+                    <div class="viewport-arch-content-dark">
+                      <div>
+                        <span class="code-hi">CODEBASE</span> &nbsp;→ HTML5 +
+                        CSS3 + Vanilla JS
+                      </div>
+                      <div>
+                        <span class="code-dim"
+                          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+                          Git Commit &amp; Push</span
+                        >
+                      </div>
+                      <div>
+                        <span class="code-hi">GITHUB</span> &nbsp;&nbsp;&nbsp;→
+                        Automated Webhook Trigger
+                      </div>
+                      <div>
+                        <span class="code-dim"
+                          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓
+                          Netlify Build Engine</span
+                        >
+                      </div>
+                      <div>
+                        <span class="code-hi">EDGE CDN</span> &nbsp;→ Global
+                        Deployment &amp; SSL
+                      </div>
+                      <div
+                        style="
+                          margin-top: 14px;
+                          border-top: 1px solid rgba(255, 255, 255, 0.12);
+                          padding-top: 10px;
+                        "
+                      >
+                        <span class="code-dim"
+                          >// Lighthouse Performance: 99+ Speed · Zero CSS
+                          Framework Overheads</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cell">
-                <span class="stat-val">JS</span>
-                <span class="stat-key">INTERACT</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val">Git</span>
-                <span class="stat-key">VCS</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val g">Netlify</span>
-                <span class="stat-key">HOSTING</span>
-              </div>
-            </div>
-            <div class="proj-arch">
-              <div class="arch-label">// Deployment Pipeline</div>
-              <div><span class="k">CODEBASE</span> &nbsp;→ HTML5 + CSS +  JS</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ Commit & Push</span></div>
-              <div><span class="k">GITHUB</span> &nbsp;&nbsp;&nbsp;→ Version Control Repository</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓ Webhook Trigger</span></div>
-              <div><span class="k">NETLIFY</span> &nbsp;&nbsp;→ Automated CI/CD Build</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↳ Global Edge CDN</span></div>
-            </div>
-            <div class="proj-feat">
-              <span class="feat-tag on">Responsive Design</span>
-              <span class="feat-tag on">Landing Page</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://gmc-multimedia-computer.netlify.app/" class="pr" style="color:var(--green)">OPEN LIVE SITE ↗</a>
-              <a href="https://github.com/denesh27/G.M.C-Multimedia-Computer">GITHUB ↗</a>
             </div>
           </div>
 
           <!-- PROJECT 005: Movie Listing -->
-          <div class="proj-card span-2">
-            <div class="proj-header">
-              <div>
-                <div class="proj-index">CASE_FILE // PROJECT_005</div>
-                <div class="proj-name">Movie Listing</div>
-                <div class="proj-type">React Application</div>
+          <div class="project-showcase-row-light" data-aos="fade-up">
+            <div class="project-detail-col">
+              <span class="project-tag-pill-light">React.js Web App</span>
+              <h3 class="project-showcase-title-light">Movie Listing</h3>
+              <p class="project-summary-text-light">
+                A dynamic movie discovery single-page application integrating
+                the TMDB API. Implements React state management hooks,
+                asynchronous data fetching, and responsive movie grid cards with
+                modal details.
+              </p>
+
+              <div class="project-action-btns">
+                <button
+                  type="button"
+                  class="btn-read-case-study"
+                  data-project="movie-listing"
+                >
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    ></path>
+                  </svg>
+                  Read Case Study
+                </button>
+                <a
+                  href="https://movies-den.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-visit-site-light"
+                  >Visit Site ↗</a
+                >
               </div>
-              <span class="stack-badge" style="color:var(--green);border-color:var(--green)">LIVE SITE</span>
             </div>
-            <div class="proj-stats">
-              <div class="stat-cell">
-                <span class="stat-val a">React</span>
-                <span class="stat-key">FRONTEND</span>
+
+            <!-- Right Browser Frame with Live Preview & Architecture Switcher -->
+            <div class="project-preview-viewport">
+              <div class="project-browser-frame">
+                <div class="browser-chrome-header">
+                  <div class="browser-window-controls">
+                    <span class="browser-dot dot-close"></span>
+                    <span class="browser-dot dot-min"></span>
+                    <span class="browser-dot dot-max"></span>
+                  </div>
+                  <div class="browser-address-bar">
+                    <svg
+                      class="browser-lock-icon"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                    >
+                      <rect
+                        x="3"
+                        y="11"
+                        width="18"
+                        height="11"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span class="browser-url-text">movies-den.netlify.app</span>
+                  </div>
+                  <div class="browser-toolbar-actions">
+                    <div class="browser-view-toggle">
+                      <button
+                        type="button"
+                        class="view-toggle-btn active"
+                        data-view="live"
+                        title="Interactive Live Website"
+                      >
+                        <span class="live-dot-pulse"></span>
+                        Live
+                      </button>
+                      <button
+                        type="button"
+                        class="view-toggle-btn"
+                        data-view="arch"
+                        title="React Component Tree"
+                      >
+                        Code
+                      </button>
+                    </div>
+                    <a
+                      href="https://movies-den.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="browser-external-link"
+                      title="Open live site in new tab"
+                    >
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                      >
+                        <path
+                          d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="browser-viewport-screen">
+                  <!-- Live Iframe View -->
+                  <div class="browser-live-view active">
+                    <div class="iframe-loading-indicator">
+                      <div class="spinner-dot"></div>
+                      <span>Connecting to live site...</span>
+                    </div>
+                    <iframe
+                      src="https://movies-den.netlify.app/"
+                      class="live-project-iframe"
+                      data-target-width="1280"
+                      loading="lazy"
+                      title="Movie Listing Live Preview"
+                      sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                    ></iframe>
+                    <div class="iframe-interaction-hint">
+                      Interactive Preview · Scroll &amp; Click Inside
+                    </div>
+                  </div>
+
+                  <!-- Architecture Code View -->
+                  <div class="browser-arch-view">
+                    <div class="viewport-arch-content-dark">
+                      <div>
+                        <span class="code-hi">&lt;App /&gt;</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                        Root State &amp; Fetch Handler
+                      </div>
+                      <div>
+                        <span class="code-dim"
+                          >&nbsp;&nbsp;&nbsp;↓ State Mapping</span
+                        >
+                      </div>
+                      <div>
+                        <span class="code-hi">&lt;MovieGrid /&gt;</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;→ Responsive Layout Container
+                      </div>
+                      <div>
+                        <span class="code-dim">&nbsp;&nbsp;&nbsp;↓ Props</span>
+                      </div>
+                      <div>
+                        <span class="code-hi">&lt;MovieCard /&gt;</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;→ Poster, Details, Hover State
+                      </div>
+                      <div
+                        style="
+                          margin-top: 14px;
+                          border-top: 1px solid rgba(255, 255, 255, 0.12);
+                          padding-top: 10px;
+                        "
+                      >
+                        <span class="code-dim"
+                          >// Features: Debounced TMDB API Search · Asynchronous
+                          Fetch · Modal Flyout</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-cell">
-                <span class="stat-val">Hooks</span>
-                <span class="stat-key">STATE MGT</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val">Fetch Data</span>
-                <span class="stat-key">TMDB API</span>
-              </div>
-              <div class="stat-cell">
-                <span class="stat-val g">Netlify</span>
-                <span class="stat-key">HOSTING</span>
-              </div>
-            </div>
-            <div class="proj-arch">
-              <div class="arch-label">// Component Matrix</div>
-              <div><span class="k">&lt;App /&gt;</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Root State & Network Requests</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;↓ State Mapping</span></div>
-              <div><span class="k">&lt;MovieGrid /&gt;</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Responsive Layout Container</div>
-              <div><span class="d">&nbsp;&nbsp;&nbsp;↓ Props</span></div>
-              <div><span class="k">&lt;MovieCard /&gt;</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ Poster, View Details, Hover State</div>
-            </div>
-            <div class="proj-feat">
-              <span class="feat-tag on">React.js</span>
-              <span class="feat-tag on">API Integration</span>
-              <span class="feat-tag on">Netlify Deploy</span>
-              <span class="feat-tag on">Component UI</span>
-            </div>
-            <div class="proj-links">
-              <a href="https://movies-den.netlify.app/" class="pr" style="color:var(--green)">OPEN LIVE SITE ↗</a>
-              
             </div>
           </div>
+        </div>
       </div>
     </section>
 
-    <!-- ════════════════════════════════ CONTACT ════════════════════════════════ -->
-    <section id="contact">
+    <!-- ════════════════════════════════ SECTION 4: JOURNEY (BLACK BACKGROUND) ════════════════════════════════ -->
+    <section id="journey">
       <div class="container">
-        <div class="section-header fade-in">
-          <span class="section-num">05 //</span>
-          <h2 class="section-title">CONTACT</h2>
-          <div class="section-line"></div>
-          <span class="section-count">LET'S BUILD SOMETHING</span>
+        <div class="section-head-dark" data-aos="fade-up">
+          <div class="section-head-meta">
+            <span class="sec-num">// 04 JOURNEY</span>
+            <span class="theme-mode-tag dark">● DARK THEME</span>
+          </div>
+          <h2 class="sec-title">My Journey</h2>
+          <span class="sec-desc"
+            >GROWTH MILESTONES · ACADEMIC TRACK RECORD · SEMESTER
+            BREAKDOWNS</span
+          >
         </div>
 
-        <div class="contact-grid fade-in">
-          <div class="contact-left">
-            <div class="contact-lead">
-              Ready to build<br />something <span>precise</span>?
+        <div class="journey-timeline-container" id="journeyTimelineContainer">
+          <!-- Static Dim Rail (The Track) -->
+          <div class="journey-track-rail"></div>
+
+          <!-- Dynamic Active Progress Line (Grows & Shrinks on Scroll) -->
+          <div class="journey-progress-line" id="journeyProgressLine">
+            <!-- Traveling Node Ring at the tip (as in styfensagala Image 1) -->
+            <div class="journey-traveling-node" id="journeyTravelingNode">
+              <div class="node-inner-dot"></div>
             </div>
-            <p class="contact-body">
-              I'm actively seeking internship opportunities for 2026. Whether
-              you're a startup building v1 or an established team with a
-              specific engineering problem, I want to hear about it. I bring
-              full-stack capability, a bias toward clean architecture, and a
-              genuine interest in shipping things that work.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:denesh040427@gmail.com" class="contact-link">
-                <div>
-                  <div class="link-label">Email</div>
-                  <div class="link-value">denesh040427@gmail.com</div>
+          </div>
+
+          <!-- Milestone Checkpoint Nodes at 2026 Work, 2026 Degree, 2022, 2021 -->
+          <div class="journey-checkpoint-dot" id="checkpoint-exp-2026"></div>
+          <div class="journey-checkpoint-dot" id="checkpoint-2026"></div>
+          <div class="journey-checkpoint-dot" id="checkpoint-2022"></div>
+          <div class="journey-checkpoint-dot" id="checkpoint-2021"></div>
+
+          <div class="journey-timeline-stack">
+            <!-- Journey Milestone 0: Enterprise Industry Experience (05/2026 - 08/2026) -->
+            <div
+              class="journey-item-row"
+              data-milestone="2026-work"
+              data-aos="fade-up"
+            >
+              <!-- Left Side: Milestone Card -->
+              <div class="journey-half-col right-pad">
+                <div class="journey-card-shell-dark">
+                  <div class="journey-entry-header">
+                    <span class="journey-type-badge-white">Enterprise Experience</span>
+                    <span
+                      style="
+                        font-family: var(--font-mono);
+                        font-size: 11px;
+                        color: #10b981;
+                        font-weight: 700;
+                      "
+                      >05/2026 – 08/2026</span
+                    >
+                  </div>
+
+                  <h3 class="journey-entry-title-dark">
+                    Chin Hin Group Property
+                  </h3>
+                  <div class="journey-entry-school-dark" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
+                    <span>IT Intern • Internship</span>
+                    <span style="font-family: var(--font-mono); font-size: 11px; color: #a1a1aa;">Kuala Lumpur, Malaysia</span>
+                  </div>
+
+                  <div class="experience-achievements-list" style="margin-top: 16px;">
+                    <div class="experience-achievement-item">
+                      <div class="achieve-bullet">✦</div>
+                      <div>
+                        <strong>Automated Inspection Engine:</strong> Architected a <strong>Flask &amp; Microsoft Graph API</strong> reporting engine synchronizing real-time Novade Cloud inspection data across <strong>15+ construction project sites</strong>.
+                      </div>
+                    </div>
+                    <div class="experience-achievement-item">
+                      <div class="achieve-bullet">✦</div>
+                      <div>
+                        <strong>Cloud Migration &amp; Power Apps:</strong> Executed a <strong>57-site SharePoint migration</strong> via <strong>PnP.PowerShell</strong> and deployed 3 production Power Apps for QA and asset tracking.
+                      </div>
+                    </div>
+                    <div class="experience-achievement-item">
+                      <div class="achieve-bullet">✦</div>
+                      <div>
+                        <strong>Enterprise Automation &amp; Workflows:</strong> Built automated PPT/HTML email reporting pipelines and configured Zendesk workflows with vendor UAT defect tracking.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px;">
+                    <span class="course-pill-dark">Python / Flask</span>
+                    <span class="course-pill-dark">Microsoft Graph API</span>
+                    <span class="course-pill-dark">Power Apps</span>
+                    <span class="course-pill-dark">SharePoint / PnP</span>
+                    <span class="course-pill-dark">Novade Cloud</span>
+                  </div>
                 </div>
-                <span class="link-arrow">↗</span>
-              </a>
+              </div>
+
+              <!-- Right Side: Year Watermark -->
+              <div class="journey-half-col left-pad journey-year-col">
+                <div class="journey-year-watermark-dark">2026</div>
+                <div class="journey-year-subtitle-dark">
+                  Enterprise Industry Experience · 05/2026 – 08/2026
+                </div>
+              </div>
+            </div>
+
+            <!-- Journey Milestone 1: Bachelor's Degree (Coursework Completed) -->
+            <div
+              class="journey-item-row"
+              data-milestone="2026"
+              data-aos="fade-up"
+            >
+              <!-- Left Side: Year Watermark -->
+              <div class="journey-half-col right-pad journey-year-col">
+                <div class="journey-year-watermark-dark">2026</div>
+                <div class="journey-year-subtitle-dark">
+                  Undergraduate · Bachelor's Degree (Coursework Completed · Semesters 1–8)
+                </div>
+              </div>
+
+              <!-- Right Side: Milestone Card -->
+              <div class="journey-half-col left-pad">
+                <div class="journey-card-shell-dark">
+                  <div class="journey-entry-header">
+                    <span class="journey-type-badge-white">Degree Track</span>
+                    <span
+                      style="
+                        font-family: var(--font-mono);
+                        font-size: 11px;
+                        color: #10b981;
+                        font-weight: 700;
+                      "
+                      >CGPA 3.75 · 10x Dean's List</span
+                    >
+                  </div>
+
+                  <h3 class="journey-entry-title-dark">
+                    Bachelor in IT (Hons) Software Engineering
+                  </h3>
+                  <div class="journey-entry-school-dark">
+                    UNITAR International University
+                  </div>
+
+                  <!-- Semester Accordion Breakdown -->
+                  <div class="accordion-journey-grid">
+                    <!-- Sem 1 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 1</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.85 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Penghayatan Etika dan Peradaban</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Computer Organization and Architecture</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Discrete Mathematics</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Information Security Management</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Introduction to Information System</td>
+                              <td>A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 2 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 2</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.90 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Integriti dan AntiRasuah</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Data Comm &amp; Networking</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Databases</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Programming Principles</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>English for Academic Purposes</td>
+                              <td>A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 3 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 3</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.75 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Falsafah dan Isu Semasa</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Internet Programming</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Human Computer Interaction</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Design Thinking</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Business Communication</td>
+                              <td>A+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 4 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 4</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.70 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Business Law</td>
+                              <td>B</td>
+                            </tr>
+                            <tr>
+                              <td>Algorithms &amp; Data Structures</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Systems Analysis &amp; Design</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Object-Oriented Programming</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Operating System</td>
+                              <td>A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 5 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 5</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.54 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Computer Ethics &amp; Cyber Laws</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Recreational Event Planning</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Software Testing &amp; Maintenance</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Web Engineering</td>
+                              <td>B+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 6 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 6</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.95 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Principles of Marketing</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Principles of Artificial Intelligence</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Requirements Engineering</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Object Oriented Software Engineering</td>
+                              <td>A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 7 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 7</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.92 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Minor Project</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Software Quality and Metrics</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Quantitative Methods</td>
+                              <td>A+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Sem 8 (Completed) -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Semester 8</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.42 / 4.0 (Completed · CGPA 3.75)</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Software Architecture and Design</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Principles of Economics</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Major Project</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Software Project Management</td>
+                              <td>B</td>
+                            </tr>
+                            <tr style="border-top: 1px solid rgba(255, 255, 255, 0.15); font-weight: 700;">
+                              <td style="color: #10b981;">Credits: 16 (Total Accumulative: 117) · Good Standing</td>
+                              <td style="color: #10b981;">GPA: 3.42</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Journey Milestone 2: Foundation in IT (2022) -->
+            <div
+              class="journey-item-row"
+              data-milestone="2022"
+              data-aos="fade-up"
+            >
+              <!-- Left Side: Milestone Card -->
+              <div class="journey-half-col right-pad">
+                <div class="journey-card-shell-dark">
+                  <div class="journey-entry-header">
+                    <span class="journey-type-badge-white">Pre-University</span>
+                    <span
+                      style="
+                        font-family: var(--font-mono);
+                        font-size: 11px;
+                        color: #10b981;
+                        font-weight: 700;
+                      "
+                      >Pointer 3.95 Highest Sem</span
+                    >
+                  </div>
+
+                  <h3 class="journey-entry-title-dark">
+                    Foundation in Information Technology
+                  </h3>
+                  <div class="journey-entry-school-dark">
+                    UNITAR International University
+                  </div>
+
+                  <div class="accordion-journey-grid single-col">
+                    <!-- Foundation Sem 1 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Foundation Semester 1</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.61 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Fundamentals of Programming</td>
+                              <td>A+</td>
+                            </tr>
+                            <tr>
+                              <td>Business Management in Digital Economy</td>
+                              <td>B</td>
+                            </tr>
+                            <tr>
+                              <td>English for Communication</td>
+                              <td>B</td>
+                            </tr>
+                            <tr>
+                              <td>Lifelong Learning &amp; Personal Dev</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Database &amp; Information Systems</td>
+                              <td>A+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Foundation Sem 2 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Foundation Semester 2</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.95 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Listening and Speaking Skills</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Fundamentals of Statistics</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Ethics Theory and Practice</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Learning Skills</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Career Portfolio</td>
+                              <td>S</td>
+                            </tr>
+                            <tr>
+                              <td>Fundamentals of IT</td>
+                              <td>A+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+
+                    <!-- Foundation Sem 3 -->
+                    <details class="journey-accordion-dark">
+                      <summary class="journey-acc-header-dark">
+                        <span>Foundation Semester 3</span>
+                        <span class="acc-icon">+</span>
+                      </summary>
+                      <div class="journey-acc-content-dark">
+                        <span class="journey-pointer-tag-dark"
+                          >Pointer: 3.72 / 4.0</span
+                        >
+                        <table class="journey-grade-table-dark">
+                          <tbody>
+                            <tr>
+                              <td>Listening and Speaking Skills</td>
+                              <td>A-</td>
+                            </tr>
+                            <tr>
+                              <td>Fundamentals of Mathematics</td>
+                              <td>B+</td>
+                            </tr>
+                            <tr>
+                              <td>Economics and Society</td>
+                              <td>A</td>
+                            </tr>
+                            <tr>
+                              <td>Reading and Writing Skills</td>
+                              <td>C+</td>
+                            </tr>
+                            <tr>
+                              <td>Young Leaders Workshop</td>
+                              <td>S</td>
+                            </tr>
+                            <tr>
+                              <td>Multimedia &amp; Web Publishing</td>
+                              <td>A+</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Side: Year Watermark -->
+              <div class="journey-half-col left-pad journey-year-col">
+                <div class="journey-year-watermark-dark">2022</div>
+                <div class="journey-year-subtitle-dark">
+                  Pre-University · Foundation Program
+                </div>
+              </div>
+            </div>
+
+            <!-- Journey Milestone 3: SPM (2021) -->
+            <div
+              class="journey-item-row"
+              data-milestone="2021"
+              data-aos="fade-up"
+            >
+              <!-- Left Side: Year Watermark -->
+              <div class="journey-half-col right-pad journey-year-col">
+                <div class="journey-year-watermark-dark">2021</div>
+                <div class="journey-year-subtitle-dark">
+                  Secondary Education Milestone
+                </div>
+              </div>
+
+              <!-- Right Side: Milestone Card -->
+              <div class="journey-half-col left-pad">
+                <div class="journey-card-shell-dark">
+                  <div class="journey-entry-header">
+                    <span class="journey-type-badge-white">High School</span>
+                    <span
+                      style="
+                        font-family: var(--font-mono);
+                        font-size: 11px;
+                        color: #10b981;
+                        font-weight: 700;
+                      "
+                      >Science &amp; Computer Science</span
+                    >
+                  </div>
+
+                  <h3 class="journey-entry-title-dark">
+                    Sijil Pelajaran Malaysia (SPM)
+                  </h3>
+                  <div class="journey-entry-school-dark">
+                    SMK Sg Kapar Indah
+                  </div>
+
+                  <div
+                    style="
+                      background: #09090b;
+                      border: 1px solid var(--border-dark-light);
+                      border-radius: var(--radius-sm);
+                      padding: 14px;
+                    "
+                  >
+                    <table class="journey-grade-table-dark">
+                      <tbody>
+                        <tr>
+                          <td>Bahasa Melayu</td>
+                          <td>B</td>
+                        </tr>
+                        <tr>
+                          <td>Bahasa Inggeris</td>
+                          <td>A-</td>
+                        </tr>
+                        <tr>
+                          <td>Pendidikan Moral</td>
+                          <td>A-</td>
+                        </tr>
+                        <tr>
+                          <td>Mathematics</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Science</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Sejarah</td>
+                          <td>C+</td>
+                        </tr>
+                        <tr>
+                          <td>Additional Mathematics</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Prinsip Akaun</td>
+                          <td>B</td>
+                        </tr>
+                        <tr>
+                          <td>Sains Komputer</td>
+                          <td>A-</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of journey-timeline-container -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════ SECTION 5: CONTACT (WHITE BACKGROUND) ════════════════════════════════ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head-light" data-aos="fade-up">
+          <div class="section-head-meta">
+            <span class="sec-num">// 05 CONTACT</span>
+            <span class="theme-mode-tag light">○ LIGHT THEME</span>
+          </div>
+          <h2 class="sec-title">Let's Connect</h2>
+          <span class="sec-desc"
+            >AVAILABLE FOR INTERNSHIP OPPORTUNITIES &amp; FULL-STACK
+            PROJECTS</span
+          >
+        </div>
+
+        <div class="contact-split-grid">
+          <!-- Contact Left -->
+          <div
+            class="contact-left-details"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="contact-giant-heading-light">
+              Ready to build<br />something <span>reliable</span>?
+            </h3>
+            <p class="contact-intro-p-light">
+              With proven full-stack and automation experience delivering enterprise
+              software at Chin Hin Group Property and strong academic distinction (CGPA 3.75, 10x Dean's List),
+              I'm open to software engineering roles, full-stack opportunities, and impactful engineering projects.
+              Whether you're scaling a product, building from scratch, or need a developer who cares about
+              reliability and architecture, let's connect.
+            </p>
+
+            <!-- Copy Email Button (Light Section) -->
+            <button
+              class="copy-email-btn-light"
+              id="copyEmailBtn"
+              aria-label="Copy email address to clipboard"
+            >
+              <div class="copy-icon-circle-light">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <span class="copy-email-text-light">denesh040427@gmail.com</span>
+              <span class="copy-action-indicator-light" id="copyFeedback"
+                >Click to Copy ❐</span
+              >
+            </button>
+
+            <!-- Social Links (Light Section) -->
+            <div class="social-buttons-row">
               <a
                 href="https://www.linkedin.com/in/denesh-baskaran/"
                 target="_blank"
-                class="contact-link"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                class="social-icon-btn-light"
               >
-                <div>
-                  <div class="link-label">LinkedIn</div>
-                  <div class="link-value">linkedin.com/in/denesh-baskaran</div>
-                </div>
-                <span class="link-arrow">↗</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
               </a>
+
               <a
                 href="https://github.com/denesh27"
                 target="_blank"
-                class="contact-link"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                class="social-icon-btn-light"
               >
-                <div>
-                  <div class="link-label">GitHub</div>
-                  <div class="link-value">github.com/denesh27</div>
-                </div>
-                <span class="link-arrow">↗</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
               </a>
+
               <a
                 href="https://wa.me/60102594127"
                 target="_blank"
-                class="contact-link"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Message"
+                class="social-icon-btn-light"
               >
-                <div>
-                  <div class="link-label">WhatsApp</div>
-                  <div class="link-value">Denesh</div>
-                </div>
-                <span class="link-arrow">↗</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
               </a>
             </div>
           </div>
 
+          <!-- Contact Right: Form -->
+          <div
+            class="contact-form-card-light"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row-2">
+                <div class="form-field-group-light">
+                  <label for="formName">Your Name</label>
+                  <input
+                    type="text"
+                    id="formName"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-field-group-light">
+                  <label for="formEmail">Your Email</label>
+                  <input
+                    type="email"
+                    id="formEmail"
+                    name="email"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
 
+              <div class="form-field-group-light">
+                <label for="formSubject">Subject</label>
+                <select id="formSubject" name="subject">
+                  <option value="Software Engineer Role">
+                    Software Engineer / Graduate Role
+                  </option>
+                  <option value="Internship Opportunity">
+                    Internship Opportunity (2026)
+                  </option>
+                  <option value="Full-Stack Project">
+                    Full-Stack Project Collaboration
+                  </option>
+                  <option value="General Inquiry">
+                    General Engineering Inquiry
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-field-group-light">
+                <label for="formMsg">Message</label>
+                <textarea
+                  id="formMsg"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell me about your team or project requirements..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-send-msg-light" id="submitBtn">
+                <span>Transmit Message</span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════════════════════════════ FOOTER ════════════════════════════════ -->
-    <footer>
+    <!-- ════════════════════════════════ SECTION 6: FOOTER (BLACK BACKGROUND) ════════════════════════════════ -->
+    <footer class="site-footer">
       <div class="container">
-        <div class="footer-inner">
-          <div class="footer-copy">
-            © 2026 <span>Denesh Baskaran</span> · Designed &amp; Built from
-            scratch · <span>v2026.1.0</span>
+        <div class="footer-inner-wrap">
+          <div class="footer-left-copy">
+            <span>© 2026 Denesh Baskaran.</span>
+            <span>All Rights Reserved.</span>
           </div>
-          <div class="footer-links">
-            <a href="#hero">BACK TO TOP ↑</a>
-            
-            
+
+          <div class="footer-right-tags">
+            <span>Based in Klang / PJ, MY</span>
+            <a href="#hero">Back to Top ↑</a>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- ════════════════════════════════ CASE STUDY MODAL (MATCHES SCREENSHOT 2) ════════════════════════════════ -->
+    <div
+      id="caseStudyModal"
+      class="case-study-modal-backdrop"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="case-study-modal-dialog">
+        <div class="case-study-modal-card">
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="modalCloseBtn"
+            aria-label="Close case study modal"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="modal-header-section">
+            <span class="modal-badge-tag" id="modalCategoryTag"
+              >CASE STUDY</span
+            >
+            <h2 class="modal-project-title" id="modalTitle">Project Title</h2>
+          </div>
+
+          <!-- Section 1: Problem & Solution Grid -->
+          <div class="modal-grid-section">
+            <div class="modal-box problem-box">
+              <h4 class="modal-box-heading">
+                <span class="status-dot red">●</span> THE PROBLEM
+              </h4>
+              <p id="modalProblemText" class="modal-box-text"></p>
+            </div>
+
+            <div class="modal-box solution-box">
+              <h4 class="modal-box-heading">
+                <span class="status-dot green">●</span> THE SOLUTION
+              </h4>
+              <p id="modalSolutionText" class="modal-box-text"></p>
+            </div>
+          </div>
+
+          <!-- Section 2: Project Background & Key Features Grid -->
+          <div class="modal-grid-section">
+            <div class="modal-box background-box">
+              <h4 class="modal-box-heading">PROJECT BACKGROUND</h4>
+              <p id="modalBackgroundText" class="modal-box-text"></p>
+            </div>
+
+            <div class="modal-box features-box">
+              <h4 class="modal-box-heading">KEY FEATURES</h4>
+              <ul id="modalFeaturesList" class="modal-features-list"></ul>
+            </div>
+          </div>
+
+          <!-- Footer: Visit Site CTA -->
+          <div class="modal-footer-actions">
+            <a
+              id="modalVisitSiteLink"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-modal-visit"
+            >
+              VISIT SITE ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Back-to-Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Typed.js for Subtitle Typewriter -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Interactive Logic Script -->
     <script src="script.js"></script>
   </body>
 </html>
