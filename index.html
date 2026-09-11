@@ -2747,7 +2747,19 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form
+              class="contact-form"
+              id="contactForm"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p style="display: none;">
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+              </p>
               <div class="form-row-2">
                 <div class="form-field-group-light">
                   <label for="formName">Your Name</label>

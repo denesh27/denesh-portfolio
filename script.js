@@ -274,11 +274,27 @@ document.addEventListener('DOMContentLoaded', () => {
         <span>Transmitting...</span>
       `;
 
-      // Check if user has configured Formspree ID
-      const actionUrl = contactForm.getAttribute('action') || '';
-      const isEndpointConfigured = actionUrl.includes('formspree.io/f/') && !actionUrl.includes('YOUR_FORM_ID');
+      function showSuccessState() {
+        submitBtn.innerHTML = '<span>Message Transmitted ✓</span>';
+        submitBtn.style.background = '#10b981';
+        submitBtn.style.borderColor = '#10b981';
+        submitBtn.style.color = '#ffffff';
+        contactForm.reset();
 
-      if (isEndpointConfigured) {
+        setTimeout(() => {
+          submitBtn.innerHTML = originalHTML;
+          submitBtn.style.background = '';
+          submitBtn.style.borderColor = '';
+          submitBtn.style.color = '';
+          submitBtn.disabled = false;
+        }, 4500);
+      }
+
+      // 1. Check if user has configured Formspree ID
+      const actionUrl = contactForm.getAttribute('action') || '';
+      const isFormspreeConfigured = actionUrl.includes('formspree.io/f/') && !actionUrl.includes('YOUR_FORM_ID');
+
+      if (isFormspreeConfigured) {
         try {
           const formData = new FormData(contactForm);
           const response = await fetch(actionUrl, {
@@ -290,30 +306,40 @@ document.addEventListener('DOMContentLoaded', () => {
           });
 
           if (response.ok) {
-            submitBtn.innerHTML = '<span>Message Transmitted ✓</span>';
-            submitBtn.style.background = '#10b981';
-            submitBtn.style.borderColor = '#10b981';
-            submitBtn.style.color = '#ffffff';
-            contactForm.reset();
-
-            setTimeout(() => {
-              submitBtn.innerHTML = originalHTML;
-              submitBtn.style.background = '';
-              submitBtn.style.borderColor = '';
-              submitBtn.style.color = '';
-              submitBtn.disabled = false;
-            }, 4500);
+            showSuccessState();
             return;
           } else {
             const data = await response.json();
             throw new Error((data.errors && data.errors.map(err => err.message).join(', ')) || 'Transmission failed');
           }
         } catch (err) {
-          console.warn('Formspree dispatch error, falling back to direct email:', err);
+          console.warn('Formspree dispatch error, trying alternate method:', err);
         }
       }
 
-      // Seamless Direct Fallback: Pre-fills email to denesh040427@gmail.com
+      // 2. Check if deployed on Netlify (Native Netlify Forms support)
+      const isNetlify = window.location.hostname.includes('netlify.app') || contactForm.hasAttribute('data-netlify');
+      if (isNetlify && !isFormspreeConfigured) {
+        try {
+          const formData = new FormData(contactForm);
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+          });
+
+          if (response.ok) {
+            showSuccessState();
+            return;
+          } else {
+            throw new Error(`Netlify form error (status ${response.status})`);
+          }
+        } catch (err) {
+          console.warn('Netlify form submission error, falling back to direct email:', err);
+        }
+      }
+
+      // 3. Direct Email Fallback: Pre-fills email to denesh040427@gmail.com
       const mailtoSubject = encodeURIComponent(`[Portfolio Contact] ${subject} - ${name}`);
       const mailtoBody = encodeURIComponent(
         `Hi Denesh,\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n--\nSent from denesh-portfolio website`
